@@ -32,7 +32,7 @@ jobs:
     name: Desplegar mkt.fvr.mx
     # Sólo pushes a main de este repo con CI en verde; nunca PRs ni forks.
     if: >-
-      github.repository == 'jblackaller92-maker/openreply' &&
+      github.repository == 'Fides-Veritas-Register/openreply' &&
       (github.event_name == 'workflow_dispatch' ||
        (github.event.workflow_run.conclusion == 'success' &&
         github.event.workflow_run.event == 'push'))
